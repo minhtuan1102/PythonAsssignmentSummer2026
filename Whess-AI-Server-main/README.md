@@ -27,7 +27,6 @@ Whess-AI-Server/
 │   │   ├── predictor.py        # Nạp model Deep Learning (PyTorch) dự đoán ELO (Hikaru_V1).
 │   │   └── stockfish_analyzer.py # Giao tiếp với file chạy C++ của Stockfish thông qua chuẩn UCI.
 │   └── main.py                 # Điểm khởi chạy của FastAPI.
-├── src/ai_engine_backup/       # Mã nguồn phiên bản cũ (Giữ lại để đối chiếu/tham khảo nếu cần).
 ├── .env.example                # File mẫu chứa các biến môi trường cần thiết.
 └── requirements.txt            # Danh sách thư viện Python.
 ```

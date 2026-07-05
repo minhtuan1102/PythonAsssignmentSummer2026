@@ -26,11 +26,6 @@ def create_app(
     app.state.pipeline = pipeline
     app.state.predict_elo_pipeline = predict_elo_pipeline
 
-    @app.on_event("startup")
-    def startup() -> None:
-        if app.state.predict_elo_pipeline is None:
-            app.state.predict_elo_pipeline = build_default_predict_elo_pipeline()
-
     @app.get("/health")
     def health() -> dict[str, str]:
         return {"status": "ok"}
