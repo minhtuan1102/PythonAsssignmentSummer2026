@@ -31,7 +31,7 @@ class AiResult:
         return {
             "success": False,
             "basicResult": basic_result,
-            "error": self.error or "Khong the phan tich bang AI luc nay.",
+            "error": self.error or "Không thể phân tích bằng AI.",
         }
 
 
@@ -60,12 +60,12 @@ class AiClient:
         if not snapshot.moves_san:
             return AiResult(
                 success=False,
-                error="Khong co nuoc di nao de phan tich.",
+                error="Không có nước đi nào để phân tích.",
             )
         if len(snapshot.moves_san) != len(snapshot.clock_times):
             return AiResult(
                 success=False,
-                error="Du lieu thoi gian va nuoc di khong khop.",
+                error="Dữ liệu thời gian và nước đi không khớp.",
             )
 
         payload = self.build_payload(snapshot)
@@ -90,7 +90,7 @@ class AiClient:
             )
             return AiResult(
                 success=False,
-                error=f"Khong the phan tich bang AI luc nay: {exc}",
+                error=f"Không thể phân tích bằng AI lúc này: {exc}",
             )
 
         if not body.get("success"):

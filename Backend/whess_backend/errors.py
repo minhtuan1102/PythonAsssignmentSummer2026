@@ -2,13 +2,13 @@ from __future__ import annotations
 
 
 ERROR_MESSAGES: dict[str, str] = {
-    "ROOM_NOT_FOUND": "Phong khong ton tai",
-    "ROOM_FULL": "Phong da day",
-    "ROOM_FINISHED": "Van dau da ket thuc",
-    "INVALID_PAYLOAD": "Du lieu gui len khong hop le",
-    "NOT_YOUR_TURN": "Chua den luot ban",
-    "ILLEGAL_MOVE": "Nuoc di khong hop le",
-    "GAME_NOT_ACTIVE": "Van dau chua san sang hoac da ket thuc",
+    "ROOM_NOT_FOUND": "Phòng không tồn tại",
+    "ROOM_FULL": "Phòng đã đầy",
+    "ROOM_FINISHED": "Ván đấu đã kết thúc",
+    "INVALID_PAYLOAD": "Dữ liệu gửi lên không hợp lệ",
+    "NOT_YOUR_TURN": "Chưa đến lượt bạn",
+    "ILLEGAL_MOVE": "Nước đi không hợp lệ",
+    "GAME_NOT_ACTIVE": "Ván đấu chưa sẵn sàng hoặc đã kết thúc",
 }
 
 
