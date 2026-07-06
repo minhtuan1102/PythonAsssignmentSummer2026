@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: #0B0E14;
+  color: #F4F6F8;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Tùy chỉnh thanh cuộn cho bảng phân tích */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141822;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262B38;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3B4252;
+}
+
+/* Kiểu cho react-markdown */
+.prose {
+  color: #F4F6F8;
+}
+.prose p {
+  margin-bottom: 1em;
+}
+.prose strong {
+  color: #E8B959;
+}

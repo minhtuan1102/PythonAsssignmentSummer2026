@@ -126,7 +126,14 @@ class Room:
 
     def public_state(self, clocks: dict[str, int] | None = None) -> dict[str, Any]:
         state: dict[str, Any] = {
+            "roomId": self.room_id,
             "status": self.status,
+            "timeControl": self.time_control,
+            "timeControlMs": self.time_control_ms,
+            "players": {
+                "white": {"connected": self.players.white.connected} if self.players.white else None,
+                "black": {"connected": self.players.black.connected} if self.players.black else None,
+            },
             "fen": self.board.fen(),
             "turn": self.turn,
             "clocks": clocks or self.clocks.to_dict(),
