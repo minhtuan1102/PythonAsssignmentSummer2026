@@ -1,4 +1,4 @@
-# Whess Backend Implementation Guide
+x`# Whess Backend Implementation Guide
 
 Mục tiêu: xây dựng Web Game Server greenfield cho Whess. Backend là nguồn sự thật cho phòng chơi, luật cờ, đồng hồ, kết quả ván và tích hợp AI service sau trận đấu.
 
